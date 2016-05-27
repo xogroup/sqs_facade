@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Nephtali Rodriguez"]
   spec.email         = ["nrodriguez@xogrp.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Allows fake AWS SQS messages to be generated for testing.}
+  spec.description   = %q{Allows fake AWS SQS messages to be generated for testing. This is intended to be used as a Faker/Factory Girl equivalent for stubbing out AWS SQS messages.}
+  spec.homepage      = "https://github.com/xogroup/aws_sqs_faker"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
@@ -26,8 +26,12 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+  spec.required_ruby_version = '~> 2.3'
+
+  spec.add_dependency "activesupport"
 
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec"
+  spec.add_development_dependency "pry-byebug"
 end
