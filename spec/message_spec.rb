@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe AwsSqsFaker::Message do
+describe Facade::Message do
   describe "When a new message is created" do
     let(:default_message){{
         "Type"=> "Notification",
