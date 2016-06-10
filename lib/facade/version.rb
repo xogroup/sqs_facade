@@ -1,3 +1,3 @@
-module AwsSqsFaker
+module Facade
   VERSION = "0.1.0"
 end

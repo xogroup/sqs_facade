@@ -1,26 +1,18 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'aws_sqs_faker/version'
+require 'facade/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "aws_sqs_faker"
-  spec.version       = AwsSqsFaker::VERSION
+  spec.name          = "sqs_facade"
+  spec.version       = Facade::VERSION
   spec.authors       = ["Nephtali Rodriguez"]
   spec.email         = ["nrodriguez@xogrp.com"]
 
   spec.summary       = %q{Allows fake AWS SQS messages to be generated for testing.}
   spec.description   = %q{Allows fake AWS SQS messages to be generated for testing. This is intended to be used as a Faker/Factory Girl equivalent for stubbing out AWS SQS messages.}
-  spec.homepage      = "https://github.com/xogroup/aws_sqs_faker"
+  spec.homepage      = "https://github.com/xogroup/sqs_facade"
   spec.license       = "MIT"
-
-  # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
-  # delete this section to allow pushing this gem to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
-  end
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"

@@ -1,4 +1,4 @@
-module AwsSqsFaker
+module Facade
   class Message
     attr_accessor :full_message
 
