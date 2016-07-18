@@ -1,5 +1,7 @@
 # SQS Facade
 
+[![Join the chat at https://gitter.im/xogroup/sqs_facade](https://badges.gitter.im/xogroup/sqs_facade.svg)](https://gitter.im/xogroup/sqs_facade?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status](https://semaphoreci.com/api/v1/nrodriguez/sqs_facade/branches/master/badge.svg)](https://semaphoreci.com/nrodriguez/sqs_facade)
 
 This gem is geared towards making your life easier when it comes to testing using AWS SQS messages. Think Factory Girl/Faker for AWS SQS purposes. It works by generating a message skeleton and allows you to override the defaults with anything you want. Internal message are stored as JSON strings.
